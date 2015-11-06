@@ -1,0 +1,12 @@
+<h1>{{ user.username}}</h1>
+isActived: <input type="checkbox" ng-model="user.is_actived"><br>
+email: <input type="text" ng-model="user.email"><br><br>
+
+<button ng-click="update()">Update</button>
+<button ng-click="remove()">remove</button>
+<a href="/">Cancel</a>
+
+<br><br>
+<div ng-if="validationError.email" class="error">
+    {{validationError.email}}
+</div>
